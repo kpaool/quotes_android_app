@@ -22,7 +22,11 @@ class CardViewAdapter(val quotes:List<Quote>,val context:Context) :RecyclerView.
         var adapter = IconAdapter(quote.getTags())
         var linearLayoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         holder.recyclerView.adapter= adapter
-        holder.recyclerView.addItemDecoration(OffsetItemDecoration(20))
+//        holder.recyclerView.addItemDecoration(OffsetItemDecoration(20))
+        if(!quote.hasBeenOffseted){
+            holder.recyclerView.addItemDecoration(OffsetItemDecoration(20))
+            quote.hasBeenOffseted=true
+        }
         holder.recyclerView.layoutManager=linearLayoutManager
     }
 

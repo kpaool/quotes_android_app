@@ -37,7 +37,7 @@ class IconViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
     }
 
     fun setBackground(){
-        val (bgColor, textColor) = generateRandomColors(10.0)
+        val (bgColor, textColor) = generateRandomColors(5.0)
         val shape = GradientDrawable()
         shape.shape = GradientDrawable.OVAL
         shape.setColor(bgColor)
@@ -46,7 +46,7 @@ class IconViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
         textView.setTextColor(textColor)
     }
 
-    fun generateRandomColors(contrast:Double): Pair<Int, Int> {
+    private fun generateRandomColors(contrast:Double): Pair<Int, Int> {
         var bgColor: Int
         var textColor: Int
         do {

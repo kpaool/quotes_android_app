@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "343204732337",
+    "project_id": "kuseka-7c6a3",
+    "storage_bucket": "kuseka-7c6a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343204732337:android:cf294ab1c2ba63c6b67190",
+        "android_client_info": {
+          "package_name": "com.ecommerce.calendly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343204732337-3bb9ia2j8upjbdab6t0h4skdql2viaqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu2u4PKFBXYYNCIQ0NKNjSL1TrqKEynV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343204732337-3bb9ia2j8upjbdab6t0h4skdql2viaqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

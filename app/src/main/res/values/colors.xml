@@ -10,4 +10,9 @@
     <color name="grey">#EFEFEF</color>
     <color name="blue_stroke">#B51A88EA</color>
     <color name="loading">#75050505</color>
+    <color name="orange">#FFFFBD59</color>
+    <color name="green">#0DD605</color>
+    <color name="red">#D60505</color>
+    <color name="transparent_white">#33FFFFFF</color>
+    <color name="nav_bar_color">#F9FBFB</color>
 </resources>

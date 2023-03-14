@@ -12,6 +12,7 @@ class Quote(quote: JsonObject) {
     val dateAdded =  quote.get("dateAdded").asString
     val dateModified = quote.get("dateModified").asString
     val dateFormat = SimpleDateFormat("yyyy-MM-dd")
+    var hasBeenOffseted =false
 
 
     fun getAddedDate():String{

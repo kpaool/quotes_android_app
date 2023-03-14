@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp"
+    app:contentPadding="8dp"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageCardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            app:contentPadding="8dp"
+            app:strokeWidth="8dp"
+            app:strokeColor="@color/orange"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bitcoin"
+                android:scaleType="centerCrop"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Coin app"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageCardView"
+            app:layout_constraintTop_toTopOf="@+id/imageCardView"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
+            app:layout_constraintEnd_toStartOf="@+id/indicator"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="THis is sample text to populate"
+            app:layout_constraintStart_toEndOf="@+id/imageCardView"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCardView"
+            app:layout_constraintEnd_toStartOf="@+id/indicator"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/indicator"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:cardCornerRadius="9dp"
+            app:contentPadding="8dp"
+            app:cardBackgroundColor="@color/orange"
+            app:layout_constraintTop_toTopOf="@+id/imageCardView"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
